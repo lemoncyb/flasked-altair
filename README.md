@@ -5,13 +5,14 @@ Inspired by the [Flasked-Vincent](https://github.com/iiSeymour/flasked-vincent) 
 
 ## Requirements
 
-Flask
-
-Altair
+- Flask
+- Altair
 
 ## Running
 
+```
 $ git clone https://github.com/lemoncyb/flasked-altair.git
 $ cd flasked-altair
 $ python ./app.py
+```
 Visit http://localhost:5000 in your browser, that's it!
