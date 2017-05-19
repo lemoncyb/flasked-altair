@@ -6,6 +6,7 @@ Inspired by the [Flasked-Vincent](https://github.com/iiSeymour/flasked-vincent) 
 ## Requirements
 
 Flask
+
 Altair
 
 ## Running
