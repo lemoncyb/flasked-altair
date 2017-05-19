@@ -1,5 +1,5 @@
 # Flasked-Altair
-Demo Flask application of using Altair to generate D3 charts using Vega grammar. Using the awesome Flask framework and the Altair library makes it ridiculously easy to create D3 visualization without writing any client side code.
+Demo [Flask](http://flask.pocoo.org) application of using [Altair](https://altair-viz.github.io/index.html) to generate [D3](https://d3js.org) charts using [Vega](https://vega.github.io/vega/) grammar. Using the awesome Flask framework and the Altair library makes it ridiculously easy to create D3 visualization without writing any client side code.
 
 Inspired by the [Flasked-Vincent](https://github.com/iiSeymour/flasked-vincent) project.
 
