@@ -11,15 +11,24 @@
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js">script></script>
 
     <script src="https://d3js.org/d3.v3.min.js"></script>
+    <!--
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vega/3.0.0-beta.30/vega.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vega-lite/2.0.0-beta.2/vega-lite.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vega-embed/3.0.0-beta.14/vega-embed.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vega-embed/3.0.0-beta.14/vega-embed.js"></script>-->
 
+    <script src="https://cdn.jsdelivr.net/npm/vega@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@3.0.0-rc12"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@3"></script>
     <script src="https://vega.github.io/datalib/datalib.min.js"></script>
 
-    <!-- Vega Tooltip -->
+    <!-- Vega Tooltip
     <script src="https://vega.github.io/vega-tooltip/vega-tooltip.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="https://vega.github.io/vega-tooltip/vega-tooltip.css">
+    <link rel="stylesheet" type="text/css" href="https://vega.github.io/vega-tooltip/vega-tooltip.css">-->
+    <!-- Import Vega 3 & Vega-Lite 2 (does not have to be from CDN) -->
+   <link rel="stlesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/vega-tooltip@0.16.0/vega-tooltip.scss">
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vega-tooltip@0.16.0/build/vega-tooltip.min.js"></script>
 
     <style>hr, h3 {padding-bottom: 20px;}canvas {background-color: #fffff;}</style>
     <style>
@@ -67,7 +76,7 @@
           actions: {export: true, source: false, editor: false}
         };
 
-        vega.embed("#"+div, url, opt, function(error, result) {
+        vegaEmbed("#"+div, url, opt, function(error, result) {
           // result.view is the Vega View, url is the original Vega-Lite specification
           vegaTooltip.vegaLite(result.view, url);
         });
