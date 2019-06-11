@@ -52,19 +52,14 @@
           <li><a href="http://d3js.org/">D3</a></li>
           <li><a href="http://flask.pocoo.org/">Flask</a></li>
           <li><a href="/electricity">electricity chart</a></li>
-          <li><a href="/cars">cars chart</a></li>
+          <li><a href="/">Home page</a></li>
         </ul>
-        <h1 class="text-muted">Flasked Altair Demo Home Page</h1>
+        <h3 class="text-muted">Flasked Altair</h3>
       </div>
 
       <div class="charts text-center">
-        <div class="row"><div id="bar"></div></div><hr>
-        <div class="waterfall" id="waterfall"></div><hr>
-        <div class="row"><div id="line"></div></div><hr>
-        <div class="row"><div id="multiline"></div></div><hr>
-        <div class="row"><div id="stocks"></div></div><hr>
-        <div class="row"><div id="scatter"></div></div><hr>
-       
+        <h1>Car Graph</h1>
+        <div class="row"><div id="cars"></div></div><hr>
         <!-- Placeholder for the tooltip -->
         <div id="vis-tooltip" class="vg-tooltip"></div>
       </div>
@@ -85,13 +80,8 @@
         });
       }
 
-      parse("/data/bar", "bar")
-      parse("/data/waterfall", "waterfall")
-      parse("/data/line", "line");
-      parse("/data/multiline", "multiline");
-      parse("/data/stocks", "stocks");
-      parse("/data/scatter", "scatter");
-   
+
+      parse("/data/cars","cars");
     </script>
 
   </body>
