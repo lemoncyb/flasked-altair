@@ -10,9 +10,14 @@ Inspired by the [Flasked-Vincent](https://github.com/iiSeymour/flasked-vincent) 
 
 ## Running
 
+
 ```
 $ git clone https://github.com/lemoncyb/flasked-altair.git
 $ cd flasked-altair
+$ python -m venv env
+$ (windows) .\env\scripts\activate
+$ (Unix based) source env/bin/activate
+$ pip install -r requirements.txt
 $ python ./app.py
 ```
 Visit http://localhost:5000 in your browser, that's it!
